@@ -1,0 +1,33 @@
+<!-- Enunciado: 
+    Title: Usando inputs ocultos Título Usando inputs ocultos
+
+Agregar el siguiente input hidden al formulario de login
+name: 'pagina'
+value: 'login'
+Comprobar en el browser que hace el campo hidden al submitear el formulario
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login: Usando inputs ocultos Título Usando inputs ocultos</title>
+</head>
+<body>
+   <form action="login.html" method="get" enctype="application/x-www-form-urlencoded">
+   <!-- funciones de los atributos: 
+        - action: The action attribute specifies where to send the form-data when a form is submitted.
+        - methond: attribute specifies how to send form-data 
+        - enctype: Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)
+        The enctype attribute can be used only if method="post"
+    -->
+    <h3>Login: Usando inputs ocultos Título Usando inputs ocultos</h3>
+    <label for="fname" >username:</label>
+    <input type="hidden" id="username" name="username" placeholder="username" size="30" maxlength="12"><br><br>
+    <label for="password">password</label>
+    <input type="password" size="30" maxlength="8" placeholder="password"><br><br>
+    <button type="submit" value="Submit" >login</button>
+    </form>
+</body>
+</html>
+

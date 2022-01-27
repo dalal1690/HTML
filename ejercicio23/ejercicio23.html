@@ -1,0 +1,52 @@
+<!-- Enunciado:
+    Title: Login
+Título: Login
+Crear una linea
+Crear un formulario con los siguientes atributos:
+action: login.html
+method: get
+enctype: 'application/x-www-form-urlencoded'
+Crear los siguientes campos dentro del form:
+Input de texto con los siguientes atributos:
+name: username
+placeholder: username
+size: 30
+maxlength: 12
+Input de password con los siguientes atributos:
+name: password
+size: 30
+maxlength: 8
+placeholder: password
+Botón de submit
+texto: Login
+name: login
+--- crear la pagina de login con lo siguiente: 
+Title: Mirar la URL
+Título: Mirar la URL
+Crear una linea
+Crear un párrafo con el siguiente texto: Luego de submitear el formulario de la página index.html mirar la url del browser para ver como se enviaron los datos de un documento al otro
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+   <form action="login.html" method="get" enctype="application/x-www-form-urlencoded">
+   <!-- funciones de los atributos: 
+        - action: The action attribute specifies where to send the form-data when a form is submitted.
+        - methond: attribute specifies how to send form-data 
+        - enctype: Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)
+        The enctype attribute can be used only if method="post"
+    -->
+    <h3>Login</h3>
+    <label for="fname" >username:</label>
+    <input type="text" id="username" name="username" placeholder="username" size="30" maxlength="12"><br><br>
+    <label for="password">password</label>
+    <input type="password" size="30" maxlength="8" placeholder="password"><br><br>
+    <button type="submit" value="Submit" >login</button>
+    </form>
+</body>
+</html>
+
